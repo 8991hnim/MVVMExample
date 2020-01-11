@@ -1,14 +1,18 @@
 package m.tech.mvvmexample.api;
 
+import m.tech.mvvmexample.api.responses.SearchRecipeResponse;
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
+
 public interface RecipeApi {
 
-    //TODO: create resource class
-//    @GET("api/search")
-//    Call<Resource<Recipe>> searchRecipe(
-//            @Query("key") String key,
-//            @Query("q") String query,
-//            @Query("page") String page
-//    );
+    @GET("api/search")
+    Call<SearchRecipeResponse> searchRecipe(
+            @Query("key") String key,
+            @Query("q") String query,
+            @Query("page") String page
+    );
 
 
 }
