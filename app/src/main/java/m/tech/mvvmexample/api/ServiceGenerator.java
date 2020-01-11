@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceGenerator {
-    private static final String BASE_URL = "recipesapi.herokuapp.com";
+    private static final String BASE_URL = "https://recipesapi.herokuapp.com";
 
     private static Retrofit.Builder retrofitBuilder = new Retrofit.Builder()
             .baseUrl(BASE_URL)

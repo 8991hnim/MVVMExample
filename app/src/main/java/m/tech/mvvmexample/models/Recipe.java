@@ -19,6 +19,10 @@ public class Recipe {
     @SerializedName("social_rank")
     private float socialRank;
 
+    public Recipe(String title) {
+        this.title = title;
+    }
+
     public String getTitle() {
         return title;
     }
